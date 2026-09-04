@@ -9,7 +9,7 @@ Lists or searches OpenRouter's internal benchmark leaderboards:
   with reasoning-effort-tagged scores, plus per-slug percentiles.
 
 Usage from cli.py:
-    python cli.py benchmarks [category] [-s search] [-n limit]
+    python cli.py benchmarks \[category\] \[-s search\] \[-n limit\]
     python cli.py benchmarks                                # list categories
     python cli.py benchmarks models-codecategories          # top of a category
     python cli.py benchmarks intelligence -s deepseek       # search within group

@@ -1,0 +1,67 @@
+site_name: modelrank
+site_description: CLI tool and SDK to list, filter, sort, compare, and analyze LLM models across OpenRouter, ArtificialAnalysis.ai, and models.dev.
+site_url: https://vibheksoni.com/modelrank/
+repo_url: https://github.com/vibheksoni/modelrank
+repo_name: vibheksoni/modelrank
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: index.md
+  - Guide:
+      - Quick Start: guide/quickstart.md
+      - Usage Examples: guide/examples.md
+  - API Reference:
+      - Core: api/core.md
+      - OpenRouter: api/openrouter.md
+      - Sources: api/sources.md
+      - Analysis: api/analysis.md
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [.]
+          options:
+            show_source: false
+            show_root_heading: true
+            show_symbol_type_heading: true
+            show_symbol_type_toc: true
+            members_order: source
+            separate_signature: true
+            show_signature_annotations: true
+            signature_cross_refs: true
+            heading_level: 2
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - tables

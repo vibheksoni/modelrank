@@ -1,6 +1,8 @@
 .*
 *.md
 !README.md
+!docs/**/*.md
+!.github/
 __pycache__/
 *.pyc
 recovered_search_py*.txt
