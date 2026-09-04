@@ -1,6 +1,6 @@
 site_name: modelrank
 site_description: CLI tool and SDK to list, filter, sort, compare, and analyze LLM models across OpenRouter, ArtificialAnalysis.ai, and models.dev.
-site_url: https://vibheksoni.com/modelrank/
+site_url: https://vibheksoni.github.io/modelrank/
 repo_url: https://github.com/vibheksoni/modelrank
 repo_name: vibheksoni/modelrank
 
