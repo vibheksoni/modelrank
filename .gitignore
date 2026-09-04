@@ -1,0 +1,10 @@
+.*/
+*.md
+!README.md
+__pycache__/
+*.pyc
+recovered_search_py*.txt
+openrouter_filter.py
+_aa_*.json
+_*.txt
+*.har
